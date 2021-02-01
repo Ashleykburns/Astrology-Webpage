@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zodiac Astrology</title>
+    <style>
+      body {
+        background-image: url("https://wallup.net/wp-content/uploads/2017/11/23/518646-Funerium-space-3D-galaxy-stars-colorful.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0px;
+        background: -webkit-linear-gradient(45deg, #00fd61, #b172f8 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      button {
+        display: block;
+        margin: 0px auto;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 22px;
+        padding: 14px 20px;
+        border: 1.5px solid #7920f7;
+        border-radius: 35px;
+        box-shadow: 2px 2px 10px 5px #7920f7;
+        transition: all 300ms ease-in-out;
+      }
+      button:hover {
+        background: #7920f7;
+        color: #000000;
+      }
+      img {
+        width: 325px;
+        display: block;
+        margin: 30px auto;
+        border-radius: 200px;
+      }
+      p {
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        font-size: 32px;
+        line-height: 36px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        margin: 0px auto;
+        padding: 5px 5px;
+        border: 1.5px solid #7920f7;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px #7920f7;
+        background: rgba(8, 26, 27, 0.384);
+      }
+      .calendar {
+        color: pink;
+        font-size: 25px;
+      }
+      footer {
+        font-size: 15px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+        color: #ffffff;
+        margin-block-start: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      ⭑☾✧ Zodiac Astrology ✧☽⭑
+    </h1>
+    <h2>
+      <button>
+        <strong>
+          . . . what's your sign? . . .
+        </strong>
+      </button>
+      <script>
+        let contactButton = document.querySelector("button");
+        contactButton.addEventListener("click", welcome);
+        function welcome() {
+          let name = prompt("What is your name?");
+          let email = prompt("and your email?");
+          let bday = prompt("When is your birthday?");
+          alert("The stars have spoken! ✨ Check your email!");
+        }
+      </script>
+    </h2>
+    <img
+      src="https://s3.amazonaws.com/thinkific-import/229688/5Rgj6E04SKulQUy1d9bY_zodiac_wheel.png"
+      alt="zodiac wheel"
+    />
+    <p>
+      Have you ever wondered why people act the way they do?
+      <br />
+      Or wanted to be a better judge of character when you've met someone new?
+      <br />
+      Have no fear, you can check here!
+      <br />
+      <a
+        class="calendar"
+        href="https://www.astrology-zodiac-signs.com/zodiac-calendar/"
+        target="_blank"
+      >
+        Birthday Zodiac
+      </a>
+    </p>
+    <hr />
+    <footer>
+      Web design by AshleyB
+    </footer>
+  </body>
+</html>
